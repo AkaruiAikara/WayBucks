@@ -10,7 +10,7 @@ export default function Jumbotron() {
                 <img className="absolute z-10 -bottom-8 -right-24" src={slice} alt="slice" />
                 <img className="absolute z-10 rotate-90 -bottom-16 left-1/3" src={slice} alt="slice" />
                 <div className="space-y-12 lg:pr-72">
-                    <h1 className="text-6xl font-bold">WAYBUCKS</h1>
+                    <h1 className="text-6xl font-bold font-noto">WAYBUCKS</h1>
                     <h3 className="text-3xl">Things are changing, but we’re still here for you</h3>
                     <p className="text-xl">We have temporarily closed our in-store cafes, but select grocery and drive-thru locations remaining open. Waysbucks Drivers is also available</p>
                     <p className="text-xl mt-5">Let's Order...</p>

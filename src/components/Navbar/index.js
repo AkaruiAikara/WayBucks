@@ -15,10 +15,10 @@ export default function Navbar() {
                 <div className="hidden w-full sm:block sm:w-auto" id="mobile-menu">
                 <ul className="flex justify-end mt-10 sm:flex-row sm:space-x-2 sm:mt-0 sm:text-sm sm:font-medium">
                     <li>
-                    <a href="#" className="text-blood bg-white border-solid border-2 border-blood hover:bg-blood hover:text-white focus:ring-4 focus:ring-red-200 font-medium rounded-md text-sm p-10 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-blood dark:focus:ring-red-800">Login</a>
+                    <a href="#" className="text-blood font-product bg-white border-solid border-2 border-blood hover:bg-blood hover:text-white focus:ring-4 focus:ring-red-200 font-medium rounded-md text-sm p-10 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-blood dark:focus:ring-red-800">Login</a>
                     </li>
                     <li>
-                    <a href="#" className="text-white bg-blood hover:bg-red-600 focus:ring-4 focus:ring-red-200 font-medium rounded-md text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-blood dark:focus:ring-red-800">Register</a>
+                    <a href="#" className="text-white font-product bg-blood hover:bg-red-600 focus:ring-4 focus:ring-red-200 font-medium rounded-md text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-blood dark:focus:ring-red-800">Register</a>
                     </li>
                 </ul>
                 </div>
