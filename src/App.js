@@ -6,7 +6,7 @@ import ListProducts from './components/ListProducts';
 
 export default function App() {
   return (
-    <div>
+    <div className="container mx-auto my-6">
       <Navbar />
       <Jumbotron />
       <ListProducts />
