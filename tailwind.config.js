@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'blood': '#bd0707',
+    }
   },
   plugins: [
     require('@themesberg/flowbite/plugin'),
