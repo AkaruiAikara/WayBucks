@@ -9,6 +9,7 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'blood': '#bd0707',
+      'pinky': '#f6dada',
     },
     fontFamily: {
       'sans': ['Avenir', 'sans-serif'],
