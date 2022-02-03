@@ -1,4 +1,5 @@
-export default function Modal() {
+export default function Modal(props) {
+    const setIsLogin = props.setIsLogin;
     return (
         <div>
             <div id="loginModal" aria-hidden="true" className="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
@@ -17,7 +18,7 @@ export default function Modal() {
                             <div>
                                 <input type="password" name="password" id="password" placeholder="Password" className="bg-smooth border border-blood text-gray-900 text-sm rounded-md focus:ring-red-800 focus:border-red-800 block w-full p-4 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required />
                             </div>
-                            <button type="submit" className="w-full text-white bg-blood hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blood dark:focus:ring-red-600">Login</button>
+                            <button type="button" onClick={() => setIsLogin(true)} className="w-full text-white bg-blood hover:bg-red-600 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-4 text-center dark:bg-blue-600 dark:hover:bg-blood dark:focus:ring-red-600">Login</button>
                             <div className="text-center text-md font-medium text-gray-500 dark:text-gray-300">
                                 Don't have an account? Click <button type="button" data-modal-toggle="loginModal" className="text-blood hover:underline dark:text-red-800"><button type="button" data-modal-toggle="registerModal" >Here</button></button>
                             </div>
