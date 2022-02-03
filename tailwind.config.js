@@ -10,6 +10,7 @@ module.exports = {
       current: 'currentColor',
       'blood': '#bd0707',
       'pinky': '#f6dada',
+      'smooth': 'rgba(224, 200, 200, 0.25)',
     },
     fontFamily: {
       'sans': ['Avenir', 'sans-serif'],
