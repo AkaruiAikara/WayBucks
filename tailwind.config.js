@@ -19,7 +19,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@themesberg/flowbite/plugin'),
+    require('flowbite/plugin'),
   ],
   darkMode: 'class',
 }
