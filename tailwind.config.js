@@ -11,6 +11,7 @@ module.exports = {
       'blood': '#bd0707',
       'pinky': '#f6dada',
       'smooth': 'rgba(224, 200, 200, 0.25)',
+      'maroon': 'rgba(151, 74, 74, 1)',
     },
     fontFamily: {
       'sans': ['Avenir', 'sans-serif'],
