@@ -12,9 +12,9 @@ function Leftnav(props) {
         return (
             <ul className="flex justify-end items-center space-x-12">
                 <li>
-                <button id="basketDropdown" data-dropdown-toggle="basket-dropdown">
+                <Link to="cart">
                         <img src={shopbasket} alt="avatar" />
-                </button>
+                </Link>
                 </li>
                 <li>
                     <button id="profileDropdown" data-dropdown-toggle="profile-dropdown">
