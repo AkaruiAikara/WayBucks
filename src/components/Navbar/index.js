@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import logo from '../../assets/img/logo.png';
 import avatar from '../../assets/img/avatar.png';
@@ -6,9 +6,14 @@ import shopbasket from '../../assets/img/shopbasket.png';
 import profileicon from '../../assets/img/profileicon.svg';
 import logouticon from '../../assets/img/logouticon.svg';
 
-function Leftnav(props) {
-    const isLogin = props.isLogin;
-    if (isLogin) {
+function Rightnav(props) {
+    const Logout = () => {
+        props.setIsLogin(() => {
+            localStorage.removeItem('token')
+        })
+        useNavigate('/')
+    }
+    if (props.isLogin) {
         return (
             <ul className="flex justify-end items-center space-x-12">
                 <li>
@@ -31,7 +36,7 @@ function Leftnav(props) {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="block py-4 px-4 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                                <a onClick={() => Logout()} className="block py-4 px-4 text-md text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
                                     <div className="flex items-center gap-4">
                                         <img src={logouticon} alt="" />
                                         <span>Logout</span>
@@ -64,7 +69,7 @@ export default function Navbar(props) {
                 <Link to="/">
                     <img src={logo} alt="logo" />
                 </Link>
-                <Leftnav isLogin={props.isLogin} />
+                <Rightnav isLogin={props.isLogin} setIsLogin={props.setIsLogin} />
             </div>
         </nav>
     )
