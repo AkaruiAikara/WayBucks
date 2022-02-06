@@ -8,6 +8,7 @@ import Detail from './pages/Detail';
 import Cart from './pages/Cart';
 import Transaction from './pages/Transaction';
 import Profile from './pages/Profile';
+import AddProduct from './pages/AddProduct';
 
 export default function App() {
   const [isLogin, setIsLogin] = useState(() => {
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="cart" element={<Cart isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="transaction" element={<Transaction isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="profile" element={<Profile isLogin={isLogin} setIsLogin={setIsLogin}/>} />
+        <Route path="add-product" element={<AddProduct isLogin={isLogin} setIsLogin={setIsLogin}/>} />
       </Routes>
     </div>
   )
