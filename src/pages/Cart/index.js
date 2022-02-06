@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import cartproduct from '../../assets/img/cart-product.png'
 import bin from '../../assets/img/bin.svg'
 import invoice from '../../assets/img/invoice.svg'
@@ -58,10 +60,10 @@ export default function Cart() {
                                 <span className="text-lg text-blood font-bold">Rp. 69.000</span>
                             </div>
                         </div>
-                        <div className="border-2 border-blood bg-smooth text-center justify-center py-3 px-8 rounded-md whitespace-nowrap">
+                        <Link to="/transaction" className="border-2 border-blood bg-smooth text-center justify-center py-3 px-8 rounded-md whitespace-nowrap">
                             <img className="mx-auto p-2" src={invoice} alt="" />
                             <h5 className="text-md text-blood">Attache of Transaction</h5>
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="text-center">

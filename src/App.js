@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import Cart from './pages/Cart';
+import Transaction from './pages/Transaction';
 
 export default function App() {
   const [isLogin, setIsLogin] = useState(() => {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Home isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="detail" element={<Detail isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="cart" element={<Cart isLogin={isLogin} setIsLogin={setIsLogin}/>} />
+        <Route path="transaction" element={<Transaction isLogin={isLogin} setIsLogin={setIsLogin}/>} />
       </Routes>
     </div>
   )
