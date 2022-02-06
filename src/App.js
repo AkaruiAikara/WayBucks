@@ -9,6 +9,7 @@ import Cart from './pages/Cart';
 import Transaction from './pages/Transaction';
 import Profile from './pages/Profile';
 import AddProduct from './pages/AddProduct';
+import AddToping from './pages/AddToping';
 
 export default function App() {
   const [isLogin, setIsLogin] = useState(() => {
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="transaction" element={<Transaction isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="profile" element={<Profile isLogin={isLogin} setIsLogin={setIsLogin}/>} />
         <Route path="add-product" element={<AddProduct isLogin={isLogin} setIsLogin={setIsLogin}/>} />
+        <Route path="add-toping" element={<AddToping isLogin={isLogin} setIsLogin={setIsLogin}/>} />
       </Routes>
     </div>
   )
