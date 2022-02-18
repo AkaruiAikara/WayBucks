@@ -11,7 +11,7 @@ export default function AddProduct() {
                         <input type="text" name="name" id="name" className="bg-smooth border-2 border-blood text-gray-900 text-sm rounded-md focus:ring-red-800 focus:border-red-800 block w-full p-4 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Name Product" required />
                         <input type="number" name="price" id="price" className="bg-smooth border-2 border-blood text-gray-900 text-sm rounded-md focus:ring-red-800 focus:border-red-800 block w-full p-4 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Price" required />
                         <div className="relative">
-                            <div class="flex absolute inset-y-0 right-0 items-center pr-6 pointer-events-none">
+                            <div className="flex absolute inset-y-0 right-0 items-center pr-6 pointer-events-none">
                                 <img src={attachment} alt="" />
                             </div>
                             <input type="file" name="name" id="name" className="bg-smooth border-2 border-blood text-gray-900 text-sm rounded-md focus:ring-red-800 focus:border-red-800 block w-full p-4 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white file:hidden" placeholder="Name Product" required />

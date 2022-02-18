@@ -5,38 +5,18 @@ import list4 from '../../assets/img/list-4.png'
 
 import { Link } from 'react-router-dom';
 
-const DetailLink = (props) => {
-    if (props.isLogin) {
-        return (
-            <Link to="detail" className="bg-pinky rounded-xl">
-                <img className="w-full" src={list1} alt="list1" />
-        
-                <div className="text-blood p-4">
-                    <h3 className="text-2xl font-bold font-noto">Ice Coffee Palm Sugar</h3>
-                    <span className="text-lg font-thin">Rp. 27.000</span>
-                </div>
-            </Link>
-        )
-    } else {
-        return (
-        <button data-modal-toggle='loginModal' className="bg-pinky rounded-xl">
-            <img className="w-full" src={list1} alt="list1" />
-    
-            <div className="text-blood p-4">
-                <h3 className="text-2xl font-bold font-noto">Ice Coffee Palm Sugar</h3>
-                <span className="text-lg font-thin">Rp. 27.000</span>
-            </div>
-        </button>
-        )
-    }
-}
-
 export default function ListProducts(props) {
     return (
         <div className="lg:mx-20">
             <h2 className="text-4xl font-black text-blood mt-16 mb-12">Let's Order</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <DetailLink isLogin={props.isLogin} />
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <Link to="/detail" className="bg-pinky rounded-xl">
+                    <img className="w-full" src={list1} alt="list1" />
+                    <div className="text-blood p-4">
+                        <h3 className="text-2xl font-bold font-noto">Ice Coffee Palm Sugar</h3>
+                        <span className="text-lg font-thin">Rp. 27.000</span>
+                    </div>
+                </Link>
                 <div className="bg-pinky rounded-xl">
                     <img className="w-full" src={list2} alt="list2" />
                     <div className="text-blood p-4">
